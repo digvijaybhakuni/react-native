@@ -1,12 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Alert } from 'react-native';
+import { StyleSheet, Text, View, Button, Alert, AlertButton } from 'react-native';
 
 export default class App extends React.Component {
-  
+
   showAlert = () => {
-    Alert.alert('Hello World');
+    Alert.alert('Hello World', 'This is Sample', this.abtn);
   }
-  
+
+  abtn = [{ text: 'Ask me later', onPress: () => console.log('Ask me later pressed') }, 
+  { text: 'Accept', onPress: () => console.log('Accept pressed') }];
+
   render() {
     return (
       <View style={styles.container}>
