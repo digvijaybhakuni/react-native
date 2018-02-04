@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Digvijay Bhakuni",
+      "email": "digvijaybhk@gmail.com",
+      "password": "test"
+    },
+    {
+      "id": 2,
+      "name": "Pankaj Kumar",
+      "email": "pankaj@gmail.com",
+      "password": "test"
+    },
+    {
+      "name": "Servana",
+      "email": "servana@gmail.com",
+      "password": "test",
+      "id": 3
+    }
+  ],
+  "fishs": [
+    {
+      "id": 1,
+      "name": "Fish 1",
+      "desciptions": "F1",
+      "price": 344,
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "name": "Fish 2",
+      "desciptions": "F2",
+      "price": 344,
+      "rating": 4
+    },
+    {
+      "name": "Fish 3",
+      "desciptions": "F3",
+      "price": 344,
+      "rating": 4,
+      "id": 3
+    }
+  ],
+  "fishloactions": [
+    {
+      "id": 1,
+      "fishId": 1,
+      "location": {
+        "lat": -73,
+        "lng": 121
+      }
+    },
+    {
+      "id": 2,
+      "fishId": 1,
+      "location": {
+        "lat": -72,
+        "lng": 121
+      }
+    }
+  ]
+}
