@@ -14,7 +14,7 @@ export default class ProfileScreen extends React.Component{
     }
 
     componentWillMount(){
-        fetch('https://jsonplaceholder.typicode.com/users/1')
+        fetch('https://blooming-citadel-67822.herokuapp.com/users/1')
         .then(res => res.json())
         .then(res => {
             console.log('res', res)
@@ -33,7 +33,6 @@ export default class ProfileScreen extends React.Component{
                     this.state.user ?
                     <View>
                         <Text>Name: {this.state.user.name}</Text>
-                        <Text>Phone: {this.state.user.phone}</Text>
                         <Text>Email: {this.state.user.email}</Text>
                     </View> :
                     <Text> Loading </Text>
